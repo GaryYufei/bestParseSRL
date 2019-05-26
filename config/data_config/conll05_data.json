@@ -1,0 +1,42 @@
+{
+	"eval_script": "data/srl-eval.pl",
+	"pos_set_file": "data/conll2005_pos_set.txt",
+	"char_set_file": "data/conll2005_char.txt",
+	"tag_file": "data/conll05_tag_set.txt",
+	"span_label_file": "data/conll05_span_label_set.txt",
+	"embedding_file": "data/conll05_glove_embedding.txt",
+	"relative_layer_file": "data/conll05_relative_level.txt",
+	"ancestors_label_file": "data/conll05_ancestors_label.txt",
+	"dp_label_file": "data/conll05_dp_labels.txt",
+	"train": {
+		"srl": "data/conll05/srl/train-set-new-props.txt",
+		"dp": "data/conll05/dp_parse/wsj_train.sd",
+		"parse": "data/conll05/new_parse/train-set.gold",
+		"pred_dp": "data/conll05/dp_parse/train_reranker.sd",
+		"pred_parse": "data/conll05/new_parse/train_reranker.parse",
+		"eval": "NULL"
+	},
+	"dev": {
+		"srl": "data/conll05/srl/dev-set-new-props.txt",
+		"dp": "data/conll05/dp_parse/wsj_dev.sd",
+		"parse": "data/conll05/new_parse/dev-set.gold",
+		"pred_dp": "data/conll05/dp_parse/wsj_dev.pred.sd",
+		"pred_parse": "data/conll05/new_parse/dev-set.pred",
+		"eval": "data/conll05/eval/devel.24.gold_props"
+	},
+	"test": [{
+		"srl": "data/conll05/srl/test-wsj-new-props.txt",
+		"dp": "data/conll05/dp_parse/wsj_test.sd",
+		"parse": "data/conll05/new_parse/test-wsj.gold",
+		"pred_dp": "data/conll05/dp_parse/wsj_test.pred.sd",
+		"pred_parse": "data/conll05/new_parse/test-wsj.pred",
+		"eval": "data/conll05/eval/test.wsj.gold_props"
+	}, {
+		"srl": "data/conll05/srl/test-brown-new-props.txt",
+		"dp": "data/conll05/dp_parse/brown.sd",
+		"parse": "data/conll05/new_parse/test-brown.gold",
+		"pred_dp": "data/conll05/dp_parse/brown.pred.sd",
+		"pred_parse": "data/conll05/new_parse/test-brown.pred",
+		"eval": "data/conll05/eval/test.brown.gold_props"
+	}]
+}

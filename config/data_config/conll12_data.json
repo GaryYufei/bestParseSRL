@@ -1,0 +1,32 @@
+{
+	"eval_script": "data/srl-eval.pl",
+	"pos_set_file": "data/conll2012_pos_set.txt",
+	"char_set_file": "data/conll2012_char.txt",
+	"tag_file": "data/conll12_tag_set.txt",
+	"span_label_file": "data/conll12_span_label_set.txt",
+	"embedding_file": "data/conll12_glove_embedding.txt",
+	"train": {
+		"srl": "data/conll12/srl/conll2012.new_train.txt",
+		"dp": "data/conll12/dp_parse/conll2012.train.sd",
+		"parse": "data/conll12/parse/conll2012.train.gold",
+		"pred_dp": "data/conll12/dp_parse/conll2012.train.sd",
+		"pred_parse": "data/conll12/parse/conll2012.train.gold",
+		"eval": "NULL"
+	},
+	"dev": {
+		"srl": "data/conll12/srl/conll2012.new_dev.txt",
+		"dp": "data/conll12/dp_parse/conll2012.dev.sd",
+		"parse": "data/conll12/parse/conll2012.dev.gold",
+		"pred_dp": "data/conll12/dp_parse/conll2012.dev.pred.sd",
+		"pred_parse": "data/conll12/parse/conll2012.dev.pred",
+		"eval": "data/conll12/eval/conll2012.devel.props.gold.txt"
+	},
+	"test": [{
+		"srl": "data/conll12/srl/conll2012.new_test.txt",
+		"dp": "data/conll12/dp_parse/conll2012.test.sd",
+		"parse": "data/conll12/parse/conll2012.test.gold",
+		"pred_dp": "data/conll12/dp_parse/conll2012.test.pred.sd",
+		"pred_parse": "data/conll12/parse/conll2012.test.pred",
+		"eval": "data/conll12/eval/conll2012.test.props.gold.txt"
+	}]
+}
